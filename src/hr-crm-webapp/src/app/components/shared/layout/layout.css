@@ -19,7 +19,7 @@ app-navbar {
   right: 0;
   height: 72px;
   z-index: 1000;
-  border-bottom: 1px solid;
+  border-bottom: 1px solid var(--border-color);
 }
 
 .main-container {
@@ -105,11 +105,8 @@ app-content-area {
   }
 
   app-sidebar {
-    left: 15px;
-    top: calc(72px + (100vh - 72px) / 2);
-    transform: translateY(-50%);
-    width: 80px;
-    max-height: calc(100vh - 72px - 40px);
+    max-height: 100vh;
+    border-right: 1px solid var(--border-color);
   }
 
   app-sidebar.collapsed {
