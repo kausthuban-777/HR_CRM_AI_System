@@ -225,9 +225,9 @@
 }
 
 .job-card.selected {
-  border-color: var(--accent-primary);
-  background: linear-gradient(135deg, rgba(118, 75, 162, 0.02), rgba(155, 89, 182, 0.02));
-  box-shadow: 0 0 0 2px var(--accent-primary);
+  border-color: var(--accent-orange);
+  background: rgba(255, 107, 53, 0.05);
+  box-shadow: 0 0 0 2px var(--accent-orange);
 }
 
 .job-card-header {
@@ -379,7 +379,7 @@
 
 .progress-fill {
   height: 100%;
-  background: linear-gradient(90deg, var(--accent-primary), var(--accent-secondary));
+  background: var(--accent-orange);
   border-radius: 3px;
   transition: width 0.4s ease;
 }

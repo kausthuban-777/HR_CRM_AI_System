@@ -7,7 +7,7 @@
   padding: 2rem;
   max-width: 1800px;
   margin: 0 auto;
-  background: linear-gradient(135deg, #f0f4f8 0%, #e6f0fa 100%);
+  background: var(--bg-primary);
   min-height: 100vh;
   animation: fadeIn 0.5s ease;
 }
@@ -75,9 +75,9 @@
   font-weight: 700;
   color: var(--text-primary);
   line-height: 1.2;
-  background: linear-gradient(135deg, #6366f1, #4f46e5);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background: none;
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: unset;
   background-clip: text;
 }
 
@@ -145,7 +145,7 @@
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+  background: var(--accent-orange);
   color: white;
   border: none;
   box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
@@ -200,7 +200,7 @@
   left: 0;
   right: 0;
   height: 4px;
-  background: linear-gradient(90deg, #6366f1, #8b5cf6, #ec4899);
+  background: var(--accent-orange);
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.4s ease;
@@ -229,8 +229,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, rgba(99, 102, 241, 0.15), rgba(79, 70, 229, 0.1));
-  color: #6366f1;
+  background: rgba(255, 107, 53, 0.15);
+  color: var(--accent-orange);
 }
 
 .stat-icon-wrapper svg {
@@ -295,7 +295,7 @@
 
 .progress-fill {
   height: 100%;
-  background: linear-gradient(90deg, #6366f1, #8b5cf6);
+  background: var(--accent-orange);
   border-radius: 3px;
   transition: width 0.8s ease;
 }
@@ -342,9 +342,9 @@
 }
 
 .tab-btn.active {
-  background: linear-gradient(135deg, #6366f1, #4f46e5);
+  background: var(--nav-active-bg);
   color: white;
-  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+  box-shadow: 0 4px 12px rgba(45, 55, 72, 0.3);
 }
 
 /* OVERVIEW CONTENT */
@@ -522,8 +522,8 @@
   width: 40px;
   height: 40px;
   border-radius: 10px;
-  background: linear-gradient(135deg, rgba(99, 102, 241, 0.2), rgba(79, 70, 229, 0.15));
-  color: #6366f1;
+  background: rgba(255, 107, 53, 0.15);
+  color: var(--accent-orange);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -725,7 +725,7 @@
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #6366f1, #4f46e5);
+  background: var(--accent-orange);
   color: white;
   display: flex;
   align-items: center;
@@ -840,8 +840,8 @@
 }
 
 .toggle-switch input:checked + .toggle-slider {
-  background: linear-gradient(135deg, #6366f1, #4f46e5);
-  border-color: #6366f1;
+  background: var(--accent-orange);
+  border-color: var(--accent-orange);
 }
 
 .toggle-switch input:checked + .toggle-slider::before {
@@ -1030,7 +1030,7 @@
   align-items: center;
   gap: 0.75rem;
   padding: 1.125rem 2.5rem;
-  background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+  background: var(--accent-orange);
   color: white;
   border: none;
   border-radius: 12px;

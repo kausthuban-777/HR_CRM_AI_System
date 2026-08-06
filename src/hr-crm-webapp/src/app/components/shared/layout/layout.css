@@ -17,42 +17,36 @@ app-navbar {
   top: 0;
   left: 0;
   right: 0;
-  height: 60px;
+  height: 72px;
   z-index: 1000;
-  background: var(--bg-nav);
 }
 
 .main-container {
   display: flex;
   flex: 1;
-  margin-top: 60px;
+  margin-top: 72px;
   position: relative;
   overflow: hidden;
 }
 
 app-sidebar {
   position: fixed;
-  left: 0;
-  top: 0;
-  width: 240px;
-  height: 100%;
+  left: 15px;
+  top: calc(72px + (100vh - 72px) / 2);
+  transform: translateY(-50%);
+  max-height: calc(100vh - 72px - 40px);
   overflow-y: auto;
   overflow-x: hidden;
   z-index: 99;
-  background: var(--bg-card);
-  border-right: 1px solid var(--border-color);
-  transition: width 0.3s ease;
 }
 
-/* Sidebar collapsed state */
 app-sidebar.collapsed {
   width: 80px;
 }
 
-/* Content wrapper - scrollable area */
 .content-wrapper {
   flex: 1;
-  margin-left: 260px;
+  margin-left: 110px;
   overflow-y: auto;
   overflow-x: hidden;
   transition: margin-left 0.3s ease;
@@ -62,11 +56,11 @@ app-sidebar.collapsed {
 }
 
 .content-wrapper.sidebar-open {
-  margin-left: 260px;
+  margin-left: 110px;
 }
 
 .content-wrapper:not(.sidebar-open) {
-  margin-left: 80px;
+  margin-left: 110px;
 }
 
 /* Footer - Fixed at bottom */
@@ -99,41 +93,42 @@ app-content-area {
 /* ============ TABLET RESPONSIVE ============ */
 @media (max-width: 1024px) {
   app-navbar {
-    height: 56px;
+    height: 72px;
   }
 
   .main-container {
-    margin-top: 56px;
+    margin-top: 72px;
   }
 
   app-sidebar {
-    top: 0;
-    width: 200px;
-    height: calc(100vh - 56px);
-    margin-top: 56px;
+    left: 15px;
+    top: calc(72px + (100vh - 72px) / 2);
+    transform: translateY(-50%);
+    width: 80px;
+    max-height: calc(100vh - 72px - 40px);
   }
 
   app-sidebar.collapsed {
-    width: 70px;
+    width: 80px;
   }
 
   .content-wrapper {
-    margin-left: 220px;
+    margin-left: 110px;
   }
 
   .content-wrapper:not(.sidebar-open) {
-    margin-left: 70px;
+    margin-left: 110px;
   }
 }
 
 /* ============ TABLET-SMALL RESPONSIVE ============ */
 @media (max-width: 768px) {
   app-navbar {
-    height: 56px;
+    height: 64px;
   }
 
   .main-container {
-    margin-top: 56px;
+    margin-top: 64px;
   }
 
   app-sidebar {
@@ -204,43 +199,52 @@ app-content-area {
 
 /* ============ TABLET (1025px - DESKTOP) ============ */
 @media (min-width: 1025px) {
+  app-sidebar {
+    left: 15px;
+    top: calc(72px + (100vh - 72px) / 2);
+    transform: translateY(-50%);
+    width: 80px;
+    max-height: calc(100vh - 72px - 40px);
+  }
+
   .content-wrapper {
-    margin-left: 260px;
+    margin-left: 110px;
   }
 
   .content-wrapper:not(.sidebar-open) {
-    margin-left: 80px;
+    margin-left: 110px;
   }
 }
 
 /* ============ TABLET (769px - 1024px) ============ */
 @media (max-width: 1024px) and (min-width: 769px) {
   app-navbar {
-    height: 56px;
+    height: 72px;
   }
 
   app-sidebar {
-    width: 200px;
-    top: 0;
-    height: calc(100vh - 56px);
-    margin-top: 56px;
+    width: 80px;
+    left: 15px;
+    top: calc(72px + (100vh - 72px) / 2);
+    transform: translateY(-50%);
+    max-height: calc(100vh - 72px - 40px);
   }
 
   app-sidebar.collapsed {
-    width: 70px;
+    width: 80px;
   }
 
   .main-container {
-    margin-top: 56px;
+    margin-top: 72px;
     margin-bottom: 60px;
   }
 
   .content-wrapper {
-    margin-left: 200px;
+    margin-left: 80px;
   }
 
   .content-wrapper:not(.sidebar-open) {
-    margin-left: 70px;
+    margin-left: 80px;
   }
 
   app-footer {

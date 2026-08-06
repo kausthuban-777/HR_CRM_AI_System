@@ -29,7 +29,7 @@
   align-items: center;
   gap: 0.5rem;
   padding: 0.75rem 1.5rem;
-  background: var(--gradient-primary);
+  background: var(--accent-orange);
   color: white;
   border: none;
   border-radius: 8px;
@@ -106,19 +106,19 @@
 }
 
 .metric-icon-wrapper.purple {
-  background: var(--gradient-primary);
+  background: var(--accent-purple);
 }
 
 .metric-icon-wrapper.green {
-  background: linear-gradient(135deg, #00B894 0%, #00d4aa 100%);
+  background: var(--accent-green);
 }
 
 .metric-icon-wrapper.orange {
-  background: linear-gradient(135deg, #E67E22 0%, #f39c12 100%);
+  background: var(--accent-orange);
 }
 
 .metric-icon-wrapper.blue {
-  background: linear-gradient(135deg, #3498db 0%, #5dade2 100%);
+  background: #3498db;
 }
 
 .metric-content {
@@ -251,9 +251,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg,
-    rgba(118, 75, 162, calc(var(--deal-intensity) / 400)) 0%,
-    rgba(217, 70, 239, calc(var(--deal-intensity) / 500)) 100%);
+  background: transparent;
   pointer-events: none;
   z-index: 0;
 }
@@ -319,9 +317,9 @@
 }
 
 .deal-value-badge.high-value {
-  background: var(--gradient-primary);
+  background: var(--accent-orange);
   color: white;
-  box-shadow: 0 2px 8px rgba(118, 75, 162, 0.3);
+  box-shadow: 0 2px 8px rgba(255, 107, 53, 0.3);
 }
 
 .deal-body-heatmap {

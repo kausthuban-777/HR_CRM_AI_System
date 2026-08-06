@@ -1,52 +1,52 @@
 :root {
-    --bg-primary: #F5F5F8;
+    --bg-primary: #F5F7FA;
     --bg-card: #FFFFFF;
     --bg-nav: #FFFFFF;
-    --text-primary: #1A1A2E;
+    --text-primary: #1F2937;
     --text-secondary: #6B7280;
     --text-muted: #9CA3AF;
     --border-color: #E5E7EB;
     --shadow-card: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
     --shadow-card-hover: 0 4px 12px rgba(0,0,0,0.08);
 
-    --accent-primary: #764ba2;
-    --accent-primary-light: #764ba2;
-    --accent-secondary: #e91e63;
-    --accent-green: #00B894;
-    --accent-green-bg: #E8FFF5;
-    --accent-green-border: #00B894;
-    --accent-purple: #6C5CE7;
-    --accent-purple-bg: #F0EDFF;
-    --accent-purple-border: #6C5CE7;
-    --accent-orange: #E67E22;
-    --accent-orange-bg: #FFF4E6;
-    --accent-orange-border: #E67E22;
-    --accent-red: #E74C3C;
-    --accent-red-bg: #FFECEC;
-    --accent-red-border: #E74C3C;
+    --accent-primary: #2D3748;
+    --accent-primary-light: #4A5568;
+    --accent-secondary: #FF6B6B;
+    --accent-green: #10B981;
+    --accent-green-bg: #D1FAE5;
+    --accent-green-border: #10B981;
+    --accent-purple: #8B5CF6;
+    --accent-purple-bg: #EDE9FE;
+    --accent-purple-border: #8B5CF6;
+    --accent-orange: #FF6B35;
+    --accent-orange-bg: #FED7AA;
+    --accent-orange-border: #FF6B35;
+    --accent-red: #EF4444;
+    --accent-red-bg: #FEE2E2;
+    --accent-red-border: #EF4444;
 
-    --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    --gradient-pink: linear-gradient(135deg, #d946ef 0%, #e91e63 100%);
-    --gradient-orange: linear-gradient(135deg, #ff8c42 0%, #ff6b35 100%);
-    --gradient-purple-pink: linear-gradient(135deg, #764ba2 0%, #d946ef 100%);
+    --gradient-primary: none;
+    --gradient-pink: none;
+    --gradient-orange: none;
+    --gradient-purple-pink: none;
 
-    --nav-active-bg: #764ba2;
+    --nav-active-bg: #2D3748;
     --nav-active-text: #FFFFFF;
-    --nav-link-text: #4B5563;
-    --nav-hover-bg: rgba(139, 26, 74, 0.08);
+    --nav-link-text: #6B7280;
+    --nav-hover-bg: #F3F4F6;
 
-    --chart-bar-1: #D946EF;
-    --chart-bar-2: #A855F7;
+    --chart-bar-1: #FF6B35;
+    --chart-bar-2: #2D3748;
     --chart-bar-3: #8B5CF6;
     --chart-grid-color: #F3F4F6;
 
     --task-checkbox-bg: #E5E7EB;
-    --task-checkbox-checked: #8B1A4A;
-    --add-task-bg: #E74C3C;
+    --task-checkbox-checked: #2D3748;
+    --add-task-bg: #FF6B35;
     --add-task-text: #FFFFFF;
 
-    --font-heading: 'Black Han Sans', sans-serif;
-    --font-body: 'Noto Sans', sans-serif;
+    --font-heading: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 
     --animation-duration-fast: 200ms;
     --animation-duration-normal: 300ms;
@@ -56,29 +56,29 @@
 }
 
 [data-theme="dark"] {
-    --bg-primary: #0F0F1A;
-    --bg-card: #1A1A2E;
-    --bg-nav: #12121F;
-    --text-primary: #EAEAEA;
-    --text-secondary: #A0A0B8;
-    --text-muted: #6B6B82;
-    --border-color: #2A2A40;
+    --bg-primary: #111827;
+    --bg-card: #1F2937;
+    --bg-nav: #1F2937;
+    --text-primary: #F9FAFB;
+    --text-secondary: #9CA3AF;
+    --text-muted: #6B7280;
+    --border-color: #374151;
     --shadow-card: 0 2px 8px rgba(0,0,0,0.3);
     --shadow-card-hover: 0 6px 20px rgba(0,0,0,0.4);
 
-    --accent-green-bg: rgba(0,184,148,0.15);
-    --accent-purple-bg: rgba(108,92,231,0.15);
-    --accent-orange-bg: rgba(230,126,34,0.15);
-    --accent-red-bg: rgba(231,76,60,0.15);
+    --accent-green-bg: rgba(16,185,129,0.15);
+    --accent-purple-bg: rgba(139,92,246,0.15);
+    --accent-orange-bg: rgba(255,107,53,0.15);
+    --accent-red-bg: rgba(239,68,68,0.15);
 
-    --nav-active-bg: #764ba2;
+    --nav-active-bg: #2D3748;
     --nav-active-text: #FFFFFF;
-    --nav-link-text: #A0A0B8;
-    --nav-hover-bg: rgba(139, 26, 74, 0.2);
+    --nav-link-text: #9CA3AF;
+    --nav-hover-bg: #374151;
 
-    --chart-grid-color: #2A2A40;
+    --chart-grid-color: #374151;
 
-    --task-checkbox-bg: #2A2A40;
+    --task-checkbox-bg: #374151;
 }
 
 *, *::before, *::after {
@@ -108,7 +108,7 @@ body {
 h1,
 .page-title {
     font-family: var(--font-heading);
-    font-weight: 400;
+    font-weight: 700;
     letter-spacing: -0.02em;
     line-height: 1.2;
     color: var(--text-primary);
@@ -119,7 +119,7 @@ h2, h3, h4, h5, h6,
 .card-title,
 .section-title {
     font-family: var(--font-body);
-    font-weight: 700;
+    font-weight: 600;
     letter-spacing: -0.01em;
     line-height: 1.3;
     color: var(--text-primary);

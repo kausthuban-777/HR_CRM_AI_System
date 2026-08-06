@@ -1,11 +1,4 @@
 <div class="sidebar" [class.collapsed]="!isSidebarOpen">
-  <div class="sidebar-header">
-    <h3 class="sidebar-title">Menu</h3>
-    <button class="sidebar-toggle" (click)="toggleSidebar()" title="Toggle Sidebar">
-      <span [ngClass]="isSidebarOpen ? 'bi bi-chevron-left' : 'bi bi-chevron-right'"></span>
-    </button>
-  </div>
-
   <nav class="sidebar-nav">
     @for (item of sidebarItems; track item.id) {
       <a
@@ -20,9 +13,6 @@
         } @else {
           <i class="bi" [class]="'bi-' + item.icon"></i>
         }
-        <span class="sidebar-label" [class.hidden]="!isSidebarOpen">
-          {{ item.label }}
-        </span>
       </a>
     }
   </nav>
